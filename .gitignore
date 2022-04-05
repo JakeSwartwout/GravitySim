@@ -1,2 +1,3 @@
-Movies/*
 windows-amd64/*
+Movies/*
+!Movies/weaving.gif

@@ -1,3 +1,14 @@
+# don't include any exported versions
 windows-amd64/*
+
+# Don't include everything in the movies folder...
 Movies/*
+# just these ones, for the Readme
 !Movies/weaving.gif
+!Movies/lunar mission.gif
+!Movies/Processing code.png
+!Movies/quality pic of orbits.png
+!Movies/quality pic of many bodies.png
+!Movies/multi-planet launch_mouse.png
+!Movies/satellite_launch_mouse.png
+!Movies/parabolic ground 2.gif

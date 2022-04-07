@@ -67,6 +67,8 @@ class ForceMap {
   public void addBody(Body body) {
     // create a forcemap for just the body
     ForceMap bodiesMap = new ForceMap(body, resolution);
+    // give a copy to the body itself
+    body.saveForceMap(bodiesMap);
     // merge that map onto the existing map
     addMap(bodiesMap);
   }

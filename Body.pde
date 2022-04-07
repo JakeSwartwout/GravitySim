@@ -8,6 +8,9 @@ class Body {
   float mass;
   color bodyColor;
 
+  // a copy of the forcemap for this body
+  ForceMap forceMap;
+
   // Various constructor functions
   public Body() {
     this(new PVector(0, 0), 5);
@@ -27,6 +30,7 @@ class Body {
     radius = rad;
     mass = rad * rad * rad;
     bodyColor = bodColor;
+    forceMap = null;
   }
 
   // draw the body
@@ -35,5 +39,9 @@ class Body {
     stroke(0);
     strokeWeight(2);
     ellipse(position.x, position.y, radius * 2, radius * 2);
+  }
+
+  void saveForceMap(ForceMap map) {
+    forceMap = map;
   }
 }

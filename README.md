@@ -38,10 +38,14 @@ It's really quite smooth and pretty, so it's a shame that the gif doesn't show t
 The code is very well commented, but a description of how it works follows:
 
 ### Processing Specific Functions
+
 `GravitySim.pde`
+
 1. The processing `setup()` function is called and initializes all of our variables
 2. Each frame (60 frames per second is the default), the `draw` function is called. This draws the background map, the bodies on top of that, then updates/moves the satellites and draws them on top of it all. It also draws any UI elements, like the path the satellite will take, or the mouse cursor.
+
 `Input.pde`
+
 3. If the mouse is clicked or a key is pressed, the corresponding `mouseClicked()` or `keyPressed()` function is called. I route these to the proper UI functions to actually interact as needed.
 
 ### Global classes
